@@ -1,4 +1,7 @@
 # Ecommerce-Mern
+An e-commerce platform where users can browse products, view detailed information, and securely make purchases.
+Provides user authentication, shopping cart management, and efficient order processing.
+Integrates payment handling with Razorpay to ensure secure transactions.<br>
 
 ![image](https://github.com/user-attachments/assets/5e4f2e52-ae7c-4c9e-a147-661ac54651af)
 
@@ -61,7 +64,7 @@ POST /api/v1/product - Create a new product (Admin only).<br>
 PUT /api/v1/product/:id - Update a product (Admin only).<br>
 DELETE /api/v1/product/:id - Delete a product (Admin only).<br>
 ## Payment Routes
-POST /api/v1/payment/order - Create a Razorpay order.
+POST /api/v1/payment/order - Create a Razorpay order.<br>
 POST /api/v1/payment/verify - Verify payment signature from Razorpay.
 ## Tech Stack
 React<br>
