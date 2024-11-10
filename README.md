@@ -33,6 +33,36 @@
 - **Admin Dashboard**: Allows admins to add, edit, or delete products and categories.
 - **Responsive Design**: The app is fully responsive and optimized for various screen sizes.
 
+## Environment Variables
+Create a .env file in the root directory and set the following variables:
+PORT=8000
+MONGO_URI=your_mongodb_connection_string
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+PORT: The port on which the server runs.
+MONGO_URI: MongoDB connection string.
+RAZORPAY_KEY_ID: Razorpay API key ID for payment processing.
+RAZORPAY_KEY_SECRET: Razorpay API key secret for payment processing.
+
+# API Endpoints
+## Auth Routes
+POST /api/v1/auth/register - Register a new user.
+POST /api/v1/auth/login - User login.
+POST /api/v1/auth/logout - User logout.
+## Category Routes
+GET /api/v1/category - Get all categories.
+POST /api/v1/category - Create a new category (Admin only).
+PUT /api/v1/category/:id - Update an existing category (Admin only).
+DELETE /api/v1/category/:id - Delete a category (Admin only).
+## Product Routes
+GET /api/v1/product - Get all products.
+GET /api/v1/product/:productSlug - Get details of a specific product.
+POST /api/v1/product - Create a new product (Admin only).
+PUT /api/v1/product/:id - Update a product (Admin only).
+DELETE /api/v1/product/:id - Delete a product (Admin only).
+## Payment Routes
+POST /api/v1/payment/order - Create a Razorpay order.
+POST /api/v1/payment/verify - Verify payment signature from Razorpay.
 ## Tech Stack
 React<br>
 Html<br>
