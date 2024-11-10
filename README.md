@@ -34,32 +34,32 @@
 - **Responsive Design**: The app is fully responsive and optimized for various screen sizes.
 
 ## Environment Variables
-Create a .env file in the root directory and set the following variables:
-PORT=8000
-MONGO_URI=your_mongodb_connection_string
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
-PORT: The port on which the server runs.
-MONGO_URI: MongoDB connection string.
-RAZORPAY_KEY_ID: Razorpay API key ID for payment processing.
-RAZORPAY_KEY_SECRET: Razorpay API key secret for payment processing.
+Create a .env file in the root directory and set the following variables:<br>
+PORT=8000<br>
+MONGO_URI=your_mongodb_connection_string<br>
+RAZORPAY_KEY_ID=your_razorpay_key_id<br>
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret<br>
+PORT: The port on which the server runs.<br>
+MONGO_URI: MongoDB connection string.<br>
+RAZORPAY_KEY_ID: Razorpay API key ID for payment processing.<br>
+RAZORPAY_KEY_SECRET: Razorpay API key secret for payment processing.<br>
 
 # API Endpoints
 ## Auth Routes
-POST /api/v1/auth/register - Register a new user.
-POST /api/v1/auth/login - User login.
-POST /api/v1/auth/logout - User logout.
+POST /api/v1/auth/register - Register a new user.<br>
+POST /api/v1/auth/login - User login.<br>
+POST /api/v1/auth/logout - User logout.<br>
 ## Category Routes
-GET /api/v1/category - Get all categories.
-POST /api/v1/category - Create a new category (Admin only).
-PUT /api/v1/category/:id - Update an existing category (Admin only).
-DELETE /api/v1/category/:id - Delete a category (Admin only).
+GET /api/v1/category - Get all categories.<br>
+POST /api/v1/category - Create a new category (Admin only).<br>
+PUT /api/v1/category/:id - Update an existing category (Admin only).<br>
+DELETE /api/v1/category/:id - Delete a category (Admin only).<br>
 ## Product Routes
-GET /api/v1/product - Get all products.
-GET /api/v1/product/:productSlug - Get details of a specific product.
-POST /api/v1/product - Create a new product (Admin only).
-PUT /api/v1/product/:id - Update a product (Admin only).
-DELETE /api/v1/product/:id - Delete a product (Admin only).
+GET /api/v1/product - Get all products.<br>
+GET /api/v1/product/:productSlug - Get details of a specific product.<br>
+POST /api/v1/product - Create a new product (Admin only).<br>
+PUT /api/v1/product/:id - Update a product (Admin only).<br>
+DELETE /api/v1/product/:id - Delete a product (Admin only).<br>
 ## Payment Routes
 POST /api/v1/payment/order - Create a Razorpay order.
 POST /api/v1/payment/verify - Verify payment signature from Razorpay.
