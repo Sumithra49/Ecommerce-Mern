@@ -23,6 +23,22 @@
  ![image](https://github.com/user-attachments/assets/5a3ff198-6063-4dda-952b-b7b48856391c)
 
 
+## Features
 
+- **User Authentication**: Secure registration, login, and logout functionality.
+- **Product Browsing**: Users can view products by category or search by keywords.
+- **Product Details**: Detailed view for each product with an option to add items to the cart.
+- **Shopping Cart**: Allows users to add products to the cart and view cart items.
+- **User Dashboard**: Users can view their profile, update information, and view past orders.
+- **Admin Dashboard**: Allows admins to add, edit, or delete products and categories.
+- **Responsive Design**: The app is fully responsive and optimized for various screen sizes.
+
+## Tech Stack
+React<br>
+Html<br>
+CSS<br>
+Node.js<br>
+Express.js<br>
+Mongodb
 
 
